@@ -61,8 +61,8 @@ export default function Post({ data, comments, likes }: IProps) {
       <Head>
         <title>Avio - {data[0]?.user}&#39;s Post</title>
       </Head>
-      <div className="w-full flex justify-center items-center gap-4 flex-col">
-        <div className="w-2/5 flex justify-start items-start flex-col gap-4 bg-gray-100 px-4 py-2 rounded-lg">
+      <div className="px-4 lg:px-0 w-full flex justify-center items-center gap-4 flex-col 2xl:max-w-7xl 2xl:mx-auto">
+        <div className="w-full lg:w-2/5 flex justify-start items-start flex-col gap-4 bg-gray-100 px-4 py-2 rounded-lg">
           <div className="w-full flex justify-between items-center">
             <p className="font-bold">{data[0]?.user}</p>
             <p className="text-xs text-gray-400">

@@ -39,7 +39,7 @@ export default function Post(props: IPost) {
   return (
     <Link
       href={"/posts/" + props?._id}
-      className="w-2/5 px-4 py-2 rounded-lg bg-gray-100"
+      className="w-full lg:w-2/5 px-4 py-2 rounded-lg bg-gray-100"
     >
       <div className="w-full flex justify-between items-center">
         <p className="font-bold">{props?.user}</p>

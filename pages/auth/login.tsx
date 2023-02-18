@@ -19,11 +19,11 @@ export default function Login() {
       <Head>
         <title>Avio | Login</title>
       </Head>
-      <div className="w-full h-screen flex justify-center items-center gap-2 flex-col">
+      <div className="w-full h-screen flex justify-center items-center gap-2 flex-col 2xl:max-w-7xl 2xl:mx-auto">
         <p className="text-5xl">
           Welcome to <span className="font-bold">Avio</span>
         </p>
-        <p className="w-2/5 text-center">
+        <p className="w-4/5 lg:w-2/5 text-center">
           Join a community of people that like to express themselves and
           interact with people on the daily
         </p>

@@ -82,9 +82,9 @@ export default function Home() {
       <Head>
         <title>Avio - {user}</title>
       </Head>
-      <div className="w-full flex justify-start items-center flex-col gap-4 py-4">
+      <div className="px-4 lg:px-0 w-full flex justify-start items-center flex-col gap-4 py-4 2xl:max-w-7xl 2xl:mx-auto">
         <form
-          className="w-2/5 bg-gray-100 flex flex-col gap-2 px-4 py-2 rounded-lg"
+          className="w-full lg:w-2/5 bg-gray-100 flex flex-col gap-2 px-4 py-2 rounded-lg"
           onSubmit={createPost}
         >
           <div className="w-full flex items-center gap-2">
