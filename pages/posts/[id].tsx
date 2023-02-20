@@ -64,7 +64,14 @@ export default function Post({ data, comments, likes }: IProps) {
       <div className="px-4 lg:px-0 w-full flex justify-center items-center gap-4 flex-col 2xl:max-w-7xl 2xl:mx-auto">
         <div className="w-full lg:w-2/5 flex justify-start items-start flex-col gap-4 bg-gray-100 px-4 py-2 rounded-lg">
           <div className="w-full flex justify-between items-center">
-            <p className="font-bold">{data[0]?.user}</p>
+            <div className="flex items-center gap-1">
+              <img
+                className="w-7 h-7 rounded-full object-cover"
+                src={data[0]?.avatar}
+                alt={data[0]?.user}
+              />
+              <p className="font-bold">{data[0]?.user}</p>
+            </div>
             <p className="text-xs text-gray-400">
               {moment(data[0]?._createdAt).fromNow()}
             </p>

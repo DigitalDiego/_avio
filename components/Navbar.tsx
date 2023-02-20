@@ -19,12 +19,19 @@ export default function Navbar() {
       <Link href="/" className="text-2xl font-bold">
         Avio
       </Link>
-      <button
-        className="px-4 py-1 bg-rose-800 text-white rounded-lg"
-        onClick={logout}
-      >
-        Log out
-      </button>
+      <div className="flex items-center gap-2">
+        <button
+          className="px-4 py-1 bg-rose-800 text-white rounded-lg"
+          onClick={logout}
+        >
+          Log out
+        </button>
+        <img
+          className="w-8 h-8 rounded-full object-cover"
+          src={auth.currentUser?.photoURL}
+          alt={auth.currentUser?.displayName}
+        />
+      </div>
     </div>
   );
 }
